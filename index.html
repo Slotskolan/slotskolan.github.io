@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Slotskolan - Din Casinostream Affiliatesida</title>
+   <link rel="stylesheet" href="styles.css">
+   <meta name="description" content="Följ Slotskolan på Twitch och ta del av exklusiva casinobonusar och erbjudanden!">
+   <meta name="keywords" content="casino, streaming, bonusar, affiliatelänk, Twitch, Slotskolan">
+</head>
+<body>
+   <header>
+       <div class="hero">
+           <!-- Videologotyp -->
+           <video src="logo.webm" class="logo" autoplay loop muted playsinline aria-label="Min Logga"></video>
+           <!-- Textlag -->
+           <div class="hero-text">
+               <h1>Slotskolan</h1>
+               <p>Här hittar du exklusivt utvalda casinobonusar:</p>
+               <a href="#casino-banners" class="cta-button">Utforska Bonusar</a>
+           </div>
+       </div>
+   </header>
+
+   <main>
+       <section id="casino-banners" class="casino-banners">
+           <div class="casino-banner">
+               <a href="https://starzinotracker.com/d86dfc5c0" target="_blank">
+                   <img src="starzino.jpg" alt="Starzino Casino">
+                   <div class="info">
+                       <h3>STARZINO</h3>
+                       <p>Välkomstpaket upp till 1500€ bonus + 150 gratissnurr!</p>
+                   </div>
+               </a>
+               <!-- Trustpilot Rating -->
+               <div class="trustpilot-widget" data-casino="starzino-casino-id"></div>
+           </div>
+           <div class="casino-banner">
+               <a href="https://ggbetpro.com/l/66dee1775f4ba035ee0e43a5" target="_blank">
+                   <img src="ggbet2.png" alt="Casino 2">
+                   <div class="info">
+                       <h3>GGBET</h3>
+                       <p>100% väkomstbonus - upp till 4500€ + 275 gratissnurr!</p>
+                   </div>
+               </a>
+               <!-- Trustpilot Rating -->
+               <div class="trustpilot-widget" data-casino="casino2-id"></div>
+           </div>
+           <!-- Lägg till fler casinobanners här -->
+           </div>
+           <div class="casino-banner">
+               <a href="https://record.instantcasinoaffiliates.com/_M3-qV2DN6fYWqcfzuvZcQGNd7ZgqdRLk/1/" target="_blank">
+                   <img src="instant.png" alt="Casino 2">
+                   <div class="info">
+                       <h3>INSTANTCASINO</h3>
+                       <p>10% weekly cashback!</p>
+                   </div>
+               </a>
+               <!-- Trustpilot Rating -->
+               <div class="trustpilot-widget" data-casino="casino2-id"></div>
+           </div>
+           <!-- Lägg till fler casinobanners här -->
+       </section>
+       <section id="contact" class="contact-section">
+           <h2>Kontakta Oss</h2>
+           <p>Har du frågor? <a href="mailto:slotskolan@rkagency.net">Skicka ett mejl</a> till oss!</p>
+       </section>
+   </main>
+
+   <footer>
+       <div class="social-links">
+           <a href="https://discord.gg/din-discord-inbjudan" target="_blank">
+               <img src="discord.png" alt="Discord" class="social-banner">
+           </a>
+           <a href="https://twitch.tv/slotskolan" target="_blank">
+               <img src="twitch.png" alt="Twitch" class="social-banner">
+           </a>
+           <a href="https://x.com/slotskolan" target="_blank">
+               <img src="twitter.png" alt="Twitter" class="social-banner">
+           </a>
+           <a href="https://youtube.com/@slotskolan" target="_blank">
+               <img src="youtube.png" alt="YouTube" class="social-banner">
+           </a>
+           <a href="https://kick.com/slotskolan" target="_blank">
+            <img src="kick.png" alt="Kick" class="social-banner">
+        </a>
+       </div>
+       <p>&copy; 2024 Slotskolan. Alla rättigheter förbehållna.</p>
+   </footer>
+
+   <!-- Back-to-Top Knapp -->
+   <a href="#" class="back-to-top" aria-label="Tillbaka till toppen">↑</a>
+
+   <!-- Easter Egg Modal -->
+   <div id="easter-egg-modal" class="modal">
+       <span class="close-button">&times;</span>
+       <!-- För GIF: -->
+       <img src="easteregg.gif" alt="Easter Egg" class="modal-content">
+       <!-- Eller för Video: -->
+       <!-- <video src="easteregg.mov" class="modal-content" autoplay loop muted></video> -->
+   </div>
+
+   <!-- Trustpilot Script -->
+   <script type="text/javascript" src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+
+   <!-- JavaScript för Back-to-Top Knapp och Easter Egg -->
+   <script>
+       // Back-to-Top Knapp
+       const backToTopButton = document.querySelector('.back-to-top');
+
+       window.addEventListener('scroll', () => {
+           if (window.scrollY > 300) {
+               backToTopButton.classList.add('show');
+           } else {
+               backToTopButton.classList.remove('show');
+           }
+       });
+
+       // Easter Egg
+       const logo = document.querySelector('.logo');
+       const modal = document.getElementById('easter-egg-modal');
+       const closeButton = document.querySelector('.close-button');
+       let clickCount = 0;
+
+       logo.addEventListener('click', () => {
+           clickCount++;
+           if (clickCount === 5) {
+               modal.classList.add('show'); // Visa modalen
+               clickCount = 0; // Återställ räknaren
+           }
+       });
+
+       // Stäng modal när man klickar på stängknappen
+       closeButton.addEventListener('click', () => {
+           modal.classList.remove('show'); // Dölj modalen
+       });
+
+       // Stäng modal när man klickar utanför innehållet
+       window.addEventListener('click', (event) => {
+           if (event.target == modal) {
+               modal.classList.remove('show'); // Dölj modalen
+           }
+       });
+   </script>
+</body>
+</html>
